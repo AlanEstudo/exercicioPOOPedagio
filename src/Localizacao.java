@@ -5,8 +5,15 @@
  */
 public class Localizacao {
     private String rodovia ;
-    private float km;
+    private int km;
 
+    public Localizacao(String rodovia, int km) {
+        this.setRodovia(rodovia);
+        this.setKm(km);
+        
+    }
+
+     
     public String getRodovia() {
         return rodovia;
     }
@@ -19,9 +26,8 @@ public class Localizacao {
         return km;
     }
 
-    public void setKm(float km) {
+    public void setKm(int km) {
         this.km = km;
     }
-    
     
 }
